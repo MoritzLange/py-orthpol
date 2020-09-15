@@ -15,7 +15,7 @@ For example:
 The need to have an easy to use package that can generate polynomials orthogonal
 with respect to arbitrary weight functions is motivated by applications in the
 field of Uncertainty Quantification (UQ). In UQ, collections of such polynomials
-are known as generalized Polynomial Chaos (gPC). My end goal is to provide a tool
+are known as generalized Polynomial Chaos (gPC). The author's goal is to provide a tool
 that makes it **ridiculously easy** to construct these polynomials.
 
 How does this fork differ from the master?
@@ -53,7 +53,7 @@ python3 setup.py install
 Demos
 -----
 
-I provide several demos that demonstrate how polynomials can be constructed
+The original author provides several demos that demonstrate how polynomials can be constructed
 both from simple weight functions as well as ``scipy.stats`` random variables.
 It is quite easy based on these examples to generalize to more complicated cases.
 All one has to do is change the weight function or the random variable.
@@ -69,11 +69,3 @@ Here is a list of them:
 + [demos/demo9.pv](demos/demo9.py): Shifted Hermite polynomials using a non-standard ``scipy.stats.norm()``.
 + [demos/demo10.py](demos/demo10.py): Orthogonal polynomials with respect to a truncated normal.
 + [demos/demo11.py](demos/demo11.py): 2D orthogonal polynomials using the ``ProductBasis`` class and a collection of ``scipy.stats`` random variables.
-
-
-TODO
-----
-
-This is a list of things that need to be done:
-+ Implement the method ``orthopol.ProductBasis.d()`` that calculates the
-derivative of a product basis of polynomials with respect to x.
