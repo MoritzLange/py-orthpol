@@ -18,6 +18,12 @@ field of Uncertainty Quantification (UQ). In UQ, collections of such polynomials
 are known as generalized Polynomial Chaos (gPC). My end goal is to provide a tool
 that makes it **ridiculously easy** to construct these polynomials.
 
+How does this fork differ from the master?
+------------------------------------------
+
+- The recurrence coefficients for polynomials are normalized in [PredictiveScienceLab/py-orthpol](https://github.com/PredictiveScienceLab/py-orthpol). This normalization has been removed.
+- The code was refactored from Python2 to Python3
+
 Where does this come from?
 --------------------------
 
@@ -32,7 +38,7 @@ C++ routines to Python.
 Installation
 ------------
 
-Simply clone the repository:
+To install this fork, simply clone the repository:
 
 ```
 git clone https://github.com/moritzlange/py-orthpol.git
